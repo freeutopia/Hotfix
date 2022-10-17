@@ -1,0 +1,29 @@
+plugins {
+    id 'groovy'
+    id 'maven'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation gradleApi()
+    implementation localGroovy()
+
+    implementation 'com.android.tools.build:gradle:3.5.3'
+    implementation 'com.android.tools.build:gradle-api:3.5.3'
+
+    // ASM 相关
+    implementation 'org.javassist:javassist:3.29.0-GA'
+
+    implementation 'com.utopia.patch:base-patch:1.0.0'
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: uri('../repo'))
+        pom.groupId = "com.utopia.patch"
+        pom.artifactId = "hotfix-patch"
+        pom.version = "1.0.0"
+
+    }
+}

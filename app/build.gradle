@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+    id 'host-plugin'
+//    id 'patch-plugin'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        applicationId "com.utopia.robust"
+        compileSdkVersion 29
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+//    implementation project(':base-patch')
+    implementation 'com.utopia.patch:base-patch:1.0.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/google/' }
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+    google()
+    mavenCentral()
+
+}

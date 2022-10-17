@@ -1,0 +1,152 @@
+# compiler: R8
+# compiler_version: 1.5.69
+# min_api: 21
+# pg_map_id: e39bfba
+com.meituan.robust.Constants -> com.meituan.robust.Constants:
+    43:105:void <clinit>() -> <clinit>
+    8:8:void <init>() -> <init>
+com.meituan.robust.Patch -> com.meituan.robust.Patch:
+    5:5:void <init>() -> <init>
+    5:5:java.lang.Object clone() -> clone
+    99:105:com.meituan.robust.Patch clone() -> clone
+    69:71:void delete(java.lang.String) -> delete
+    82:82:java.lang.String getAppHash() -> getAppHash
+    24:24:java.lang.String getLocalPath() -> getLocalPath
+    32:32:java.lang.String getMd5() -> getMd5
+    8:8:java.lang.String getName() -> getName
+    74:74:java.lang.String getPatchesInfoImplClassFullName() -> getPatchesInfoImplClassFullName
+    90:90:java.lang.String getTempPath() -> getTempPath
+    16:16:java.lang.String getUrl() -> getUrl
+    57:57:boolean isAppliedSuccess() -> isAppliedSuccess
+    86:87:void setAppHash(java.lang.String) -> setAppHash
+    61:62:void setAppliedSuccess(boolean) -> setAppliedSuccess
+    28:29:void setLocalPath(java.lang.String) -> setLocalPath
+    36:37:void setMd5(java.lang.String) -> setMd5
+    12:13:void setName(java.lang.String) -> setName
+    78:79:void setPatchesInfoImplClassFullName(java.lang.String) -> setPatchesInfoImplClassFullName
+    94:95:void setTempPath(java.lang.String) -> setTempPath
+    20:21:void setUrl(java.lang.String) -> setUrl
+com.meituan.robust.PatchExecutor -> com.meituan.robust.PatchExecutor:
+    11:14:void <init>(com.meituan.robust.PatchManipulate,com.meituan.robust.RobustCallBack) -> <init>
+    36:37:void applyPatchList(java.util.List) -> applyPatchList
+    31:31:java.util.List fetchPatchList() -> fetchPatchList
+    72:126:boolean patch(com.meituan.robust.Patch) -> patch
+    20:27:void run() -> run
+com.meituan.robust.PatchManipulate -> com.meituan.robust.PatchManipulate:
+    5:5:void <init>() -> <init>
+com.meituan.robust.PatchProxy -> com.meituan.robust.PatchProxy:
+    3:3:void <init>() -> <init>
+    21:32:java.lang.Object[] packObjects(java.lang.Object[],java.lang.Object) -> packObjects
+    7:17:com.meituan.robust.PatchProxyResult proxy(java.lang.Object[],java.lang.Object,com.meituan.robust.HotfixChange,int) -> proxy
+com.meituan.robust.PatchProxyResult -> com.meituan.robust.PatchProxyResult:
+    3:3:void <init>() -> <init>
+com.meituan.robust.PatchedClassInfo -> com.meituan.robust.PatchedClassInfo:
+    7:10:void <init>(java.lang.String,java.lang.String) -> <init>
+com.meituan.robust.RobustArguments -> com.meituan.robust.RobustArguments:
+    17:24:void <init>(java.lang.Object[],java.lang.Object,boolean,int,java.lang.Class[],java.lang.Class) -> <init>
+com.meituan.robust.utils.EnhancedRobustUtils -> com.meituan.robust.utils.EnhancedRobustUtils:
+    9:9:void <clinit>() -> <clinit>
+    8:8:void <init>() -> <init>
+    59:89:java.lang.reflect.Method getDeclaredMethod(java.lang.Object,java.lang.String,java.lang.Class[],java.lang.Class) -> getDeclaredMethod
+    317:321:java.lang.Object getFieldValue(java.lang.String,java.lang.Object,java.lang.Class) -> getFieldValue
+    329:345:java.lang.reflect.Field getReflectField(java.lang.String,java.lang.Object,java.lang.Class) -> getReflectField
+    365:374:java.lang.reflect.Field getReflectStaticField(java.lang.String,java.lang.Class) -> getReflectStaticField
+    352:357:java.lang.Object getStaticFieldValue(java.lang.String,java.lang.Class) -> getStaticFieldValue
+    14:26:java.lang.Object invokeReflectConstruct(java.lang.String,java.lang.Object[],java.lang.Class[]) -> invokeReflectConstruct
+    38:50:java.lang.Object invokeReflectMethod(java.lang.String,java.lang.Object,java.lang.Object[],java.lang.Class[],java.lang.Class) -> invokeReflectMethod
+    97:104:java.lang.Object invokeReflectStaticMethod(java.lang.String,java.lang.Class,java.lang.Object[],java.lang.Class[]) -> invokeReflectStaticMethod
+    112:116:void setFieldValue(java.lang.String,java.lang.Object,int,java.lang.Class) -> setFieldValue
+    124:128:void setFieldValue(java.lang.String,java.lang.Object,boolean,java.lang.Class) -> setFieldValue
+    141:145:void setFieldValue(java.lang.String,java.lang.Object,byte,java.lang.Class) -> setFieldValue
+    153:157:void setFieldValue(java.lang.String,java.lang.Object,char,java.lang.Class) -> setFieldValue
+    165:169:void setFieldValue(java.lang.String,java.lang.Object,double,java.lang.Class) -> setFieldValue
+    177:181:void setFieldValue(java.lang.String,java.lang.Object,float,java.lang.Class) -> setFieldValue
+    189:193:void setFieldValue(java.lang.String,java.lang.Object,long,java.lang.Class) -> setFieldValue
+    201:205:void setFieldValue(java.lang.String,java.lang.Object,java.lang.Object,java.lang.Class) -> setFieldValue
+    213:217:void setFieldValue(java.lang.String,java.lang.Object,short,java.lang.Class) -> setFieldValue
+    225:229:void setStaticFieldValue(java.lang.String,java.lang.Class,java.lang.Object) -> setStaticFieldValue
+    242:246:void setStaticFieldValue(java.lang.String,java.lang.Class,int) -> setStaticFieldValue
+    254:258:void setStaticFieldValue(java.lang.String,java.lang.Class,boolean) -> setStaticFieldValue
+    271:275:void setStaticFieldValue(java.lang.String,java.lang.Class,double) -> setStaticFieldValue
+    288:292:void setStaticFieldValue(java.lang.String,java.lang.Class,float) -> setStaticFieldValue
+    305:309:void setStaticFieldValue(java.lang.String,java.lang.Class,long) -> setStaticFieldValue
+com.meituan.robust.utils.PatchTemplate -> com.meituan.robust.utils.PatchTemplate:
+    12:12:void <clinit>() -> <clinit>
+    10:10:void <init>() -> <init>
+    16:16:java.lang.Object accessDispatch(int,java.lang.Object[]) -> accessDispatch
+    26:31:java.lang.Object fixObj(java.lang.Object) -> fixObj
+    21:21:boolean isSupport(int) -> isSupport
+com.meituan.robust.utils.StringUtils -> com.meituan.robust.utils.StringUtils:
+    3:3:void <init>() -> <init>
+    9:21:boolean equals(java.lang.CharSequence,java.lang.CharSequence) -> equals
+    5:5:boolean isEmpty(java.lang.CharSequence) -> isEmpty
+com.utopia.activity.LocalPatchExecutor -> com.utopia.activity.a:
+    android.content.Context context -> a
+    com.meituan.robust.RobustCallBack robustCallBack -> c
+    com.utopia.activity.LocalPatchManipulateImp patchManipulate -> b
+    20:24:void <init>(android.content.Context,com.utopia.activity.LocalPatchManipulateImp,com.meituan.robust.RobustCallBack) -> <init>
+    41:41:java.util.List fetchPatchList() -> a
+    46:47:void applyPatchList(java.util.List) -> a
+    82:125:boolean patch(android.content.Context,com.meituan.robust.Patch) -> a
+    30:37:void run() -> run
+com.utopia.activity.LocalPatchManipulateImp -> com.utopia.activity.b:
+    8:8:void <init>() -> <init>
+    29:29:boolean ensurePatchExist(com.meituan.robust.Patch) -> ensurePatchExist
+    15:19:java.util.List fetchPatchList() -> fetchPatchList
+    34:34:java.lang.ClassLoader getDexClassloader(java.lang.String,java.lang.String) -> getDexClassloader
+    24:24:boolean verifyPatch(com.meituan.robust.Patch) -> verifyPatch
+com.utopia.activity.PatchManipulateImp -> com.utopia.activity.c:
+    android.content.Context context -> a
+    35:37:void <init>(android.content.Context) -> <init>
+    93:95:void copy(java.lang.String,java.lang.String) -> a
+    132:137:java.lang.String getPatchCacheDirPath(java.lang.String) -> a
+    124:124:boolean ensurePatchExist(com.meituan.robust.Patch) -> ensurePatchExist
+    48:66:java.util.List fetchPatchList() -> fetchPatchList
+    142:143:java.lang.ClassLoader getDexClassloader(java.lang.String,java.lang.String) -> getDexClassloader
+    78:86:boolean verifyPatch(com.meituan.robust.Patch) -> verifyPatch
+com.utopia.activity.RobustApkHashUtils -> com.utopia.activity.d:
+    java.lang.String robustApkHashValue -> a
+    16:20:java.lang.String readRobustApkHash(android.content.Context) -> a
+    39:48:java.lang.String readFirstLine(android.content.Context,java.lang.String) -> a
+    52:59:void close(java.io.Closeable) -> a
+    24:35:java.lang.String readRobustApkHashFile(android.content.Context) -> b
+com.utopia.activity.RobustCallBackSample -> com.utopia.activity.e:
+    9:9:void <init>() -> <init>
+    41:42:void exceptionNotify(java.lang.Throwable,java.lang.String) -> exceptionNotify
+    46:47:void log(java.lang.String,java.lang.String) -> log
+    35:37:void logNotify(java.lang.String,java.lang.String) -> logNotify
+    29:31:void onPatchApplied(boolean,com.meituan.robust.Patch) -> onPatchApplied
+    22:25:void onPatchFetched(boolean,boolean,com.meituan.robust.Patch) -> onPatchFetched
+    13:18:void onPatchListFetched(boolean,boolean,java.util.List) -> onPatchListFetched
+com.utopia.robust.-$$Lambda$MainActivity$c7X9cjdYkddv7dLPwwvUzYDuLs4 -> com.utopia.robust.a:
+    com.utopia.robust.MainActivity f$0 -> a
+com.utopia.robust.-$$Lambda$MainActivity$w9s7ii7FPidQFowiyrpMaRpIp5w -> com.utopia.robust.b:
+    com.utopia.robust.-$$Lambda$MainActivity$w9s7ii7FPidQFowiyrpMaRpIp5w INSTANCE -> a
+com.utopia.robust.BuildConfig -> com.utopia.robust.BuildConfig:
+    7:7:void <clinit>() -> <clinit>
+    6:6:void <init>() -> <init>
+com.utopia.robust.MainActivity -> com.utopia.robust.MainActivity:
+    13:13:void <init>() -> <init>
+    30:31:void lambda$onCreate$1(android.view.View) -> a
+    23:25:void lambda$onCreate$0(android.view.View) -> b
+    17:32:void onCreate(android.os.Bundle) -> onCreate
+    35:38:void runLocalRobust() -> runLocalRobust
+    41:43:void runRobust() -> runRobust
+com.utopia.robust.R -> com.utopia.robust.R:
+    10:10:void <init>() -> <init>
+com.utopia.robust.R$color -> com.utopia.robust.R$color:
+    11:11:void <init>() -> <init>
+com.utopia.robust.R$drawable -> com.utopia.robust.R$drawable:
+    20:20:void <init>() -> <init>
+com.utopia.robust.R$id -> com.utopia.robust.R$id:
+    24:24:void <init>() -> <init>
+com.utopia.robust.R$layout -> com.utopia.robust.R$layout:
+    28:28:void <init>() -> <init>
+com.utopia.robust.R$mipmap -> com.utopia.robust.R$mipmap:
+    31:31:void <init>() -> <init>
+com.utopia.robust.R$string -> com.utopia.robust.R$string:
+    35:35:void <init>() -> <init>
+com.utopia.robust.Test -> com.utopia.robust.Test:
+    6:6:void <init>() -> <init>
+    8:10:void <init>(java.lang.String) -> <init>
+    14:14:java.lang.String getMessage() -> getMessage

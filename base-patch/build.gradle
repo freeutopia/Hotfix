@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: uri('../repo'))
+        pom.groupId = "com.utopia.patch"
+        pom.artifactId = "base-patch"
+        pom.version = "1.0.0"
+
+    }
+}
